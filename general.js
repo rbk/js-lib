@@ -1,4 +1,4 @@
-function rbk_toggle_class( el, el_class ){
+function toggleClass( el, el_class ){
 	if( el.className.match( el_class ) ){
 		el.className = el.className.replace(el_class, '');
 	} else {
