@@ -24,3 +24,6 @@ function removeFalseValues( array ){
 	}
 	return array;
 }
+function classElements(classname){ // without the dot
+	return document.getElementsByClassName(classname);
+}
