@@ -27,3 +27,50 @@ function removeFalseValues( array ){
 function classElements(classname){ // without the dot
 	return document.getElementsByClassName(classname);
 }
+// Random Color
+function randomHex(){
+	var x = (Math.floor( Math.random()*16)+1 );
+	switch( x ){
+		case 1:
+			return "a";
+		case 2:
+			return "b";
+		case 3:
+			return "c";
+		case 4:
+			return "d";
+		case 5:
+			return "e";
+		case 6:
+			return "f";
+		case 7:
+			return "0";
+		case 8:
+			return "1";
+		case 9:
+			return "2";
+		case 10:
+			return "3";
+		case 11:
+			return "4";
+		case 12:
+			return "5";
+		case 13:
+			return "6";
+		case 14:
+			return "7";
+		case 15:
+			return "8";
+		case 16:
+			return "9";
+	}
+}
+function randomColor( ){
+	var x = "#";
+	for( var i = 0; i < 6; i++){
+		x += randomHex();
+	}
+	// console.log( x );
+	return x;
+}
+
