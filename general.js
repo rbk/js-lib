@@ -74,4 +74,20 @@ function randomColor( ){
 	return x;
 }
 
+function string_to_slug( string ){
 
+	if( typeof string === "string"  ){
+		
+		// process string
+		string = string.toLowerCase();
+		string = string.replace(/ /g, '-');
+		srting = string.replace(/[^A-Za-z0-9]/g, '');
+		string = string.replace("'", '');
+		string = string.replace('é', 'e');
+
+		return string;
+	} else {
+		return 'Not a string';
+	}
+
+}
