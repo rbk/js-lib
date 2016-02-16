@@ -1,3 +1,6 @@
+function include(scriptUrl) {
+    document.write('<script src="' + scriptUrl + '"></script>');
+}
 function toggleClass( el, el_class ){
 	if( el.className.match( el_class ) ){
 		el.className = el.className.replace(el_class, '');
